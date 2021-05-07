@@ -24,7 +24,6 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/external/cmake-modules/)
 
 project(tinygettext VERSION "0.2.0")
 
-include(MaximumWarnings)
 include(GNUInstallDirs)
 
 file(GLOB TINYGETTEXT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} src/*.cpp)
