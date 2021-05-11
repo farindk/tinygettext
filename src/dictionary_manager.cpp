@@ -47,8 +47,7 @@ DictionaryManager::DictionaryManager(const std::string& charset_) :
   use_fuzzy(true),
   current_language(),
   current_dict(nullptr),
-  empty_dict(),
-  filesystem(new UnixFileSystem)
+  empty_dict()
 {
 }
 
