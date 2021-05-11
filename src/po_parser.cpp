@@ -26,6 +26,7 @@
 #include <string.h>
 #include <unordered_map>
 #include <stdlib.h>
+#include <cassert>
 
 #include "tinygettext/language.hpp"
 #include "tinygettext/log_stream.hpp"
