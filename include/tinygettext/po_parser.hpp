@@ -23,6 +23,7 @@
 #include <iosfwd>
 
 #include "iconv.hpp"
+#include <string>
 
 namespace tinygettext {
 
@@ -43,7 +44,7 @@ private:
   int line_number;
   std::string current_line;
 
-  IConv conv;
+  //IConv conv;
 
   POParser(const std::string& filename, std::istream& in_, Dictionary& dict_, bool use_fuzzy = true);
   ~POParser();

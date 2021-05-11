@@ -20,6 +20,7 @@
 #ifndef HEADER_TINYGETTEXT_ICONV_HPP
 #define HEADER_TINYGETTEXT_ICONV_HPP
 
+#if 0
 #include <string>
 
 #ifdef TINYGETTEXT_WITH_SDL
@@ -96,6 +97,8 @@ private:
 };
 
 } // namespace tinygettext
+
+#endif
 
 #endif
 

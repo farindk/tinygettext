@@ -17,6 +17,7 @@
 //    misrepresented as being the original software.
 // 3. This notice may not be removed or altered from any source distribution.
 
+#if 0
 #include <ctype.h>
 #include <assert.h>
 #include <sstream>
@@ -142,5 +143,5 @@ IConv::convert(const std::string& text)
 }
 
 } // namespace tinygettext
-
+#endif
 /* EOF */

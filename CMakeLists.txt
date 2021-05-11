@@ -46,8 +46,8 @@ if(TINYGETTEXT_WITH_SDL)
   target_compile_definitions(tinygettext PUBLIC TINYGETTEXT_WITH_SDL)
   target_link_libraries(tinygettext PUBLIC PkgConfig::SDL2)
 else()
-  find_package(Iconv REQUIRED)
-  target_link_libraries(tinygettext PUBLIC Iconv::Iconv)
+#  find_package(Iconv REQUIRED)
+#  target_link_libraries(tinygettext PUBLIC Iconv::Iconv)
 endif()
 
 if(WIN32)
@@ -71,10 +71,10 @@ endif()
 
 configure_file(tinygettext.pc.in tinygettext.pc @ONLY)
 
-install(TARGETS tinygettext
-  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-  PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME})
-install(FILES ${tinygettext_BINARY_DIR}/tinygettext.pc
-  DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+#install(TARGETS tinygettext
+#  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+#  PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME})
+#install(FILES ${tinygettext_BINARY_DIR}/tinygettext.pc
+#  DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 
 # EOF #
