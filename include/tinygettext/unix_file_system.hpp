@@ -22,7 +22,6 @@
 
 #include "file_system.hpp"
 
-#if 0
 namespace tinygettext {
 
 class UnixFileSystem : public FileSystem
@@ -35,7 +34,6 @@ public:
 };
 
 } // namespace tinygettext
-#endif
 
 #endif
 

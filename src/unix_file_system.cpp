@@ -17,8 +17,6 @@
 //    misrepresented as being the original software.
 // 3. This notice may not be removed or altered from any source distribution.
 
-#if 0
-
 #include "tinygettext/unix_file_system.hpp"
 
 #include <filesystem>
@@ -56,7 +54,5 @@ UnixFileSystem::open_file(const std::string& filename)
 }
 
 } // namespace tinygettext
-
-#endif
 
 /* EOF */
